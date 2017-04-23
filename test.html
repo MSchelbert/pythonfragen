@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
-  <meta name="author" content="M. Schelbert">
+  <meta name="author" content="Python3">
   <title>Zusammenfassung und Selbsttest-Möglichkeit Programmieren mit Python</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -66,10 +66,14 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <section>
   <h1 class="title">Zusammenfassung und Selbsttest-Möglichkeit <em>Programmieren mit Python</em></h1>
-  <h2 class="author">M. Schelbert</h2>
-  <h3 class="date">Stand: 23.04.2017</h3>
+  <h2 class="author">Python3</h2>
+  <h3 class="date">M. Schelbert</h3>
 </section>
 
+<section class="slide level2">
+
+<p>% Stand: 23.04.2017</p>
+</section>
 <section><section id="einstieg" class="titleslide slide level1"><h1>Einstieg</h1></section><section id="fragen" class="slide level2">
 <h1>Fragen</h1>
 <ul>
@@ -106,17 +110,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <ul>
 <li>Wie wird eine Variable in Python definiert?</li>
 <li>Wie wird einer Variable ein Wert zugewiesen?</li>
-<li>Wie kann man einen langen String komfortabel eingeben?</li>
 <li>Was sind zulässige Namen für Variablen?</li>
 <li>Was ist die Ausgabe von</li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="co">&quot;LGG&quot;</span> <span class="op">==</span> <span class="st">&#39;LGG&#39;</span></code></pre></div>
 <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">schule <span class="op">=</span> <span class="st">&quot;LGG&quot;</span>
-<span class="bu">print</span> schule
-<span class="bu">print</span> <span class="st">&quot;schule&quot;</span></code></pre></div>
-<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">print</span> <span class="dv">13</span> <span class="op">+</span> <span class="dv">37</span>
-<span class="bu">print</span> <span class="st">&quot;13&quot;</span> <span class="op">+</span> <span class="st">&quot;37&quot;</span>
-<span class="bu">print</span> <span class="dv">13</span> <span class="op">+</span> <span class="st">&quot;37&quot;</span></code></pre></div>
+<span class="bu">print</span>(schule)
+<span class="bu">print</span>(<span class="st">&quot;schule&quot;</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">print</span>(<span class="dv">13</span> <span class="op">+</span> <span class="dv">37</span>)
+<span class="bu">print</span>(<span class="st">&quot;13&quot;</span> <span class="op">+</span> <span class="st">&quot;37&quot;</span>)
+<span class="bu">print</span>(<span class="dv">13</span> <span class="op">+</span> <span class="st">&quot;37&quot;</span>)</code></pre></div>
 </section><section class="slide level2">
 
 <ul>
@@ -125,65 +128,63 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li><p>z.B.</p>
 <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">x <span class="op">=</span> <span class="dv">5</span>
 x <span class="op">+=</span> <span class="dv">3</span>
-<span class="bu">print</span> x</code></pre></div></li>
-<li>gibt es noch ähnliche Operatoren?</li>
+<span class="bu">print</span>(x)</code></pre></div></li>
+<li><p>gibt es noch ähnliche Operatoren?</p></li>
 </ul></li>
-<li>Wie viele Sekunden hat ein Jahr? Wie viele ein Schaltjahr?</li>
 </ul>
 </section><section id="auflösung-1" class="slide level2">
 <h1>Auflösung</h1>
 <ul>
-<li>Variablen müssen nicht explizit deklariert werden, eine Definition erfolgt direkt mit der Zuweisung eines Werts</li>
+<li>Variablen müssen nicht explizit, zum Beispiel mit einem Schlüsselwort, deklariert werden, eine Definition erfolgt direkt mit der Zuweisung eines Werts</li>
 <li>Variable = Wert (Gleichheitszeichen)</li>
-<li>Lange Strings können mit jeweils drei Anführungszeichen definiert werden, z.B. <code>&quot;&quot;&quot;Ich bin ein langer String!&quot;&quot;&quot;</code></li>
 <li>Variablen müssen mit einem Buchstaben beginnen und können beliebige Zahlen, Buchstaben (keine Umlaute!) und Unterstriche enthalten. Eine gute Konvention ist möglichst aussagekräftige Namen zu benutzen und nur Kleinbuchstaben und Unterstriche zu verwenden. Mehr unter <a href="https://www.python.org/dev/peps/pep-0008/">PEP 8</a></li>
 </ul>
 </section><section class="slide level2">
 
-<ul>
-<li>Der Operator <code>variable += ding</code> ersetzt den etwas umständlichen Ausdruck <code>variable = variable + ding</code>. Daneben gibt es noch <code>-=</code>, <code>*=</code>, <code>/=</code> und einige mehr.</li>
-</ul>
 <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> <span class="st">&quot;LGG&quot;</span> <span class="op">==</span> <span class="st">&#39;LGG&#39;</span>
 <span class="va">True</span>
 
 <span class="op">&gt;&gt;&gt;</span> schule <span class="op">=</span> <span class="st">&quot;LGG&quot;</span>
-<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> schule
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(schule)
 LGG
-<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> <span class="st">&quot;schule&quot;</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(<span class="st">&quot;schule&quot;</span>)
 schule
 
-<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> <span class="dv">13</span> <span class="op">+</span> <span class="dv">37</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(<span class="dv">13</span> <span class="op">+</span> <span class="dv">37</span>)
 <span class="dv">50</span>
-<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> <span class="st">&quot;13&quot;</span> <span class="op">+</span> <span class="st">&quot;37&quot;</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(<span class="st">&quot;13&quot;</span> <span class="op">+</span> <span class="st">&quot;37&quot;</span>)
 <span class="dv">1337</span>
-<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> <span class="dv">13</span> <span class="op">+</span> <span class="st">&quot;37&quot;</span>
-<span class="op">----&gt;</span> <span class="dv">1</span> <span class="bu">print</span> <span class="dv">13</span> <span class="op">+</span> <span class="st">&quot;37&quot;</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(<span class="dv">13</span> <span class="op">+</span> <span class="st">&quot;37&quot;</span>)
+Traceback (most recent call last):
+  File <span class="st">&quot;&lt;pyshell#5&gt;&quot;</span>, line <span class="dv">1</span>, <span class="op">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span>
+    <span class="bu">print</span>(<span class="dv">13</span> <span class="op">+</span> <span class="st">&quot;37&quot;</span>)
 <span class="pp">TypeError</span>: unsupported operand <span class="bu">type</span>(s) <span class="cf">for</span> <span class="op">+</span>: <span class="st">&#39;int&#39;</span> <span class="op">and</span> <span class="st">&#39;str&#39;</span>
 
 <span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> <span class="dv">5</span>
 <span class="op">&gt;&gt;&gt;</span> x <span class="op">+=</span> <span class="dv">3</span>
-<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> x
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(x)
 <span class="dv">8</span></code></pre></div>
+<ul>
+<li>Der Operator <code>variable += ding</code> ersetzt den etwas umständlichen Ausdruck <code>variable = variable + ding</code>. Daneben gibt es noch <code>-=</code>, <code>*=</code>, <code>/=</code> und einige mehr.</li>
+</ul>
 </section></section>
 <section><section id="mathematische-operationen" class="titleslide slide level1"><h1>Mathematische Operationen</h1></section><section id="fragen-2" class="slide level2">
 <h1>Fragen</h1>
 <ul>
 <li>Wie ist die Reihenfolge von Rechenoperationen in Python?</li>
 <li>Was ist der Unterschied zwischen <code>3</code> und <code>3.0</code> in Python?</li>
-<li>Wie kannst du zwischen den beiden Arten wechseln?</li>
-<li>Worauf musst du bei Division mit Integers achten?</li>
+<li>Wie kannst du zwischen den beiden Typen wechseln?</li>
 <li>Wie berechnest du den Rest einer ganzzahligen Division in Python?</li>
 </ul>
 </section><section class="slide level2">
 
 <ul>
-<li>Wie lassen sich folgende Werte noch schreiben?</li>
+<li>Wie lassen sich folgende Werte noch schreiben bzw wie lautet das Ergebnis?</li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="dv">5</span><span class="op">**</span><span class="dv">3</span>
 <span class="dv">2</span><span class="op">**</span><span class="fl">0.5</span>
 <span class="fl">1e6</span>
 <span class="fl">3.141592653589793</span>
-<span class="dv">2</span><span class="op">/</span><span class="dv">8</span>
 <span class="dv">2</span>.<span class="op">/</span><span class="dv">8</span>
 <span class="dv">2</span><span class="op">/</span><span class="dv">8</span>.
 <span class="fl">5e-2</span></code></pre></div>
@@ -193,14 +194,12 @@ schule
 <li>Die Auswertungsreihenfolge (der bislang gelernten Befehle) ist <code>**</code>, <code>* / % //</code>, <code>+ -</code>, <code>&gt; &gt;= &lt; &lt;=</code>, <code>!= ==</code>, <code>not or and</code></li>
 <li><code>3</code> wird als Integer interpretiert, <code>3.0</code>als Float</li>
 <li>Typenumwandlung mit <code>float()</code> und <code>int()</code></li>
-<li>Es wird bei Division zweier Integers immer ein ganzzahliger Wert ausgegeben (Division ohne Rest) (in Python 3 nicht!)</li>
 <li>Mit dem Befehl <code>%</code></li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="dv">125</span>
-<span class="fl">1.4142135623730951</span> (<span class="op">=</span>sqrt(<span class="dv">2</span>))
+(<span class="im">import</span> math) math.sqrt(<span class="dv">2</span>)
 <span class="fl">1000000.0</span>
-math.pi
-<span class="dv">0</span>
+(<span class="im">import</span> math) math.pi
 <span class="fl">0.25</span>
 <span class="fl">0.25</span>
 <span class="fl">0.05</span></code></pre></div>
