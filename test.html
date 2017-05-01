@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
-  <meta name="author" content="Python3">
-  <title>Zusammenfassung und Selbsttest-Möglichkeit Programmieren mit Python</title>
+  <meta name="author" content="Stand: 01.05.2017 (M. Schelbert)">
+  <title>Zusammenfassung und Selbsttest-Möglichkeit Programmieren mit Python3</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -65,15 +65,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     <div class="slides">
 
 <section>
-  <h1 class="title">Zusammenfassung und Selbsttest-Möglichkeit <em>Programmieren mit Python</em></h1>
-  <h2 class="author">Python3</h2>
-  <h3 class="date">M. Schelbert</h3>
+  <h1 class="title">Zusammenfassung und Selbsttest-Möglichkeit <em>Programmieren mit Python3</em></h1>
+  <h2 class="author">Stand: 01.05.2017 (M. Schelbert)</h2>
 </section>
 
-<section class="slide level2">
-
-<p>% Stand: 23.04.2017</p>
-</section>
 <section><section id="einstieg" class="titleslide slide level1"><h1>Einstieg</h1></section><section id="fragen" class="slide level2">
 <h1>Fragen</h1>
 <ul>
@@ -93,6 +88,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li>Syntaxfehler werden direkt ausgegeben (meist mit möglicher Erklärung für den Fehler)</li>
 <li>Vorteile: Direktes Testen von Code(bausteinen), einfaches Probieren; Nachteile: Eingabe längerer Programme umständlich, wenig (End-)Benutzer freundlich</li>
 <li>Einrückung kennzeichnet einen Anweisungblock (Schleife, Verzweigung, Funktion, etc.)</li>
+<li>Ausgaben:</li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(<span class="dv">42</span>)
 <span class="dv">42</span>
@@ -111,18 +107,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li>Wie wird eine Variable in Python definiert?</li>
 <li>Wie wird einer Variable ein Wert zugewiesen?</li>
 <li>Was sind zulässige Namen für Variablen?</li>
-<li>Was ist die Ausgabe von</li>
-</ul>
-<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="co">&quot;LGG&quot;</span> <span class="op">==</span> <span class="st">&#39;LGG&#39;</span></code></pre></div>
-<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">schule <span class="op">=</span> <span class="st">&quot;LGG&quot;</span>
-<span class="bu">print</span>(schule)
-<span class="bu">print</span>(<span class="st">&quot;schule&quot;</span>)</code></pre></div>
-<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">print</span>(<span class="dv">13</span> <span class="op">+</span> <span class="dv">37</span>)
-<span class="bu">print</span>(<span class="st">&quot;13&quot;</span> <span class="op">+</span> <span class="st">&quot;37&quot;</span>)
-<span class="bu">print</span>(<span class="dv">13</span> <span class="op">+</span> <span class="st">&quot;37&quot;</span>)</code></pre></div>
-</section><section class="slide level2">
-
-<ul>
 <li>Was macht der Operator <code>+=</code> mit einer Variablen?
 <ul>
 <li><p>z.B.</p>
@@ -132,13 +116,30 @@ x <span class="op">+=</span> <span class="dv">3</span>
 <li><p>gibt es noch ähnliche Operatoren?</p></li>
 </ul></li>
 </ul>
+</section><section class="slide level2">
+
+<ul>
+<li>Was ist die Ausgabe von</li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="co">&quot;LGG&quot;</span> <span class="op">==</span> <span class="st">&#39;LGG&#39;</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">schule <span class="op">=</span> <span class="st">&quot;LGG&quot;</span>
+<span class="bu">print</span>(schule)
+<span class="bu">print</span>(<span class="st">&quot;schule&quot;</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">print</span>(<span class="dv">13</span> <span class="op">+</span> <span class="dv">37</span>)
+<span class="bu">print</span>(<span class="st">&quot;13&quot;</span> <span class="op">+</span> <span class="st">&quot;37&quot;</span>)
+<span class="bu">print</span>(<span class="dv">13</span> <span class="op">+</span> <span class="st">&quot;37&quot;</span>)</code></pre></div>
 </section><section id="auflösung-1" class="slide level2">
 <h1>Auflösung</h1>
 <ul>
 <li>Variablen müssen nicht explizit, zum Beispiel mit einem Schlüsselwort, deklariert werden, eine Definition erfolgt direkt mit der Zuweisung eines Werts</li>
 <li>Variable = Wert (Gleichheitszeichen)</li>
 <li>Variablen müssen mit einem Buchstaben beginnen und können beliebige Zahlen, Buchstaben (keine Umlaute!) und Unterstriche enthalten. Eine gute Konvention ist möglichst aussagekräftige Namen zu benutzen und nur Kleinbuchstaben und Unterstriche zu verwenden. Mehr unter <a href="https://www.python.org/dev/peps/pep-0008/">PEP 8</a></li>
+<li>Der Operator <code>variable += ding</code> ersetzt den etwas umständlichen Ausdruck <code>variable = variable + ding</code>. Daneben gibt es noch <code>-=</code>, <code>*=</code>, <code>/=</code> und einige mehr.</li>
 </ul>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> <span class="dv">5</span>
+<span class="op">&gt;&gt;&gt;</span> x <span class="op">+=</span> <span class="dv">3</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(x)
+<span class="dv">8</span></code></pre></div>
 </section><section class="slide level2">
 
 <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> <span class="st">&quot;LGG&quot;</span> <span class="op">==</span> <span class="st">&#39;LGG&#39;</span>
@@ -158,15 +159,7 @@ schule
 Traceback (most recent call last):
   File <span class="st">&quot;&lt;pyshell#5&gt;&quot;</span>, line <span class="dv">1</span>, <span class="op">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span>
     <span class="bu">print</span>(<span class="dv">13</span> <span class="op">+</span> <span class="st">&quot;37&quot;</span>)
-<span class="pp">TypeError</span>: unsupported operand <span class="bu">type</span>(s) <span class="cf">for</span> <span class="op">+</span>: <span class="st">&#39;int&#39;</span> <span class="op">and</span> <span class="st">&#39;str&#39;</span>
-
-<span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> <span class="dv">5</span>
-<span class="op">&gt;&gt;&gt;</span> x <span class="op">+=</span> <span class="dv">3</span>
-<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(x)
-<span class="dv">8</span></code></pre></div>
-<ul>
-<li>Der Operator <code>variable += ding</code> ersetzt den etwas umständlichen Ausdruck <code>variable = variable + ding</code>. Daneben gibt es noch <code>-=</code>, <code>*=</code>, <code>/=</code> und einige mehr.</li>
-</ul>
+<span class="pp">TypeError</span>: unsupported operand <span class="bu">type</span>(s) <span class="cf">for</span> <span class="op">+</span>: <span class="st">&#39;int&#39;</span> <span class="op">and</span> <span class="st">&#39;str&#39;</span></code></pre></div>
 </section></section>
 <section><section id="mathematische-operationen" class="titleslide slide level1"><h1>Mathematische Operationen</h1></section><section id="fragen-2" class="slide level2">
 <h1>Fragen</h1>
@@ -179,64 +172,65 @@ Traceback (most recent call last):
 </section><section class="slide level2">
 
 <ul>
-<li>Wie lassen sich folgende Werte noch schreiben bzw wie lautet das Ergebnis?</li>
+<li>Wie lassen sich folgende Werte noch schreiben bzw. wie lautet das Ergebnis?</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="dv">5</span><span class="op">**</span><span class="dv">3</span>
-<span class="dv">2</span><span class="op">**</span><span class="fl">0.5</span>
-<span class="fl">1e6</span>
-<span class="fl">3.141592653589793</span>
-<span class="dv">2</span>.<span class="op">/</span><span class="dv">8</span>
-<span class="dv">2</span><span class="op">/</span><span class="dv">8</span>.
-<span class="fl">5e-2</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> <span class="dv">5</span><span class="op">**</span><span class="dv">3</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="dv">2</span><span class="op">**</span><span class="fl">0.5</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="fl">1e6</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="fl">3.141592653589793</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="dv">2</span>.<span class="op">/</span><span class="dv">8</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="dv">2</span><span class="op">/</span><span class="dv">8</span>.
+<span class="op">&gt;&gt;&gt;</span> <span class="fl">5e-2</span></code></pre></div>
 </section><section id="auflösung-2" class="slide level2">
 <h1>Auflösung</h1>
 <ul>
 <li>Die Auswertungsreihenfolge (der bislang gelernten Befehle) ist <code>**</code>, <code>* / % //</code>, <code>+ -</code>, <code>&gt; &gt;= &lt; &lt;=</code>, <code>!= ==</code>, <code>not or and</code></li>
-<li><code>3</code> wird als Integer interpretiert, <code>3.0</code>als Float</li>
+<li><code>3</code> wird als Integer interpretiert und <code>3.0</code> als Float</li>
 <li>Typenumwandlung mit <code>float()</code> und <code>int()</code></li>
 <li>Mit dem Befehl <code>%</code></li>
+<li>Ergebnisse:</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="dv">125</span>
-(<span class="im">import</span> math) math.sqrt(<span class="dv">2</span>)
-<span class="fl">1000000.0</span>
-(<span class="im">import</span> math) math.pi
-<span class="fl">0.25</span>
-<span class="fl">0.25</span>
-<span class="fl">0.05</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> <span class="dv">125</span>
+<span class="op">&gt;&gt;&gt;</span> (<span class="im">import</span> math) math.sqrt(<span class="dv">2</span>)
+<span class="op">&gt;&gt;&gt;</span> <span class="fl">1000000.0</span>
+<span class="op">&gt;&gt;&gt;</span> (<span class="im">import</span> math) math.pi
+<span class="op">&gt;&gt;&gt;</span> <span class="fl">0.25</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="fl">0.25</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="fl">0.05</span></code></pre></div>
 </section></section>
 <section><section id="typen-und-umwandlung" class="titleslide slide level1"><h1>Typen und Umwandlung</h1></section><section id="fragen-3" class="slide level2">
 <h1>Fragen</h1>
 <ul>
 <li>Wie kannst du den Typ einer Variablen herausfinden?</li>
-<li><p>Was kann man mit dem Befehl</p>
-<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">isinstance</span>()</code></pre></div>
-erreichen?</li>
+<li><p>Was kann man mit dem folgenden Befehl erreichen?</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">isinstance</span>()</code></pre></div></li>
 <li><p>Was kommt hier heraus?</p></li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">float</span>(<span class="dv">3</span><span class="op">/</span><span class="dv">9</span>)
-<span class="bu">int</span>(<span class="fl">0.9999999999</span>)
-<span class="bu">int</span>(<span class="op">-</span><span class="fl">1.5</span>)
-<span class="bu">float</span>(<span class="st">&quot;3,141592&quot;</span>)
-<span class="bu">float</span>(<span class="st">&#39;2.7182818284&#39;</span>)
-<span class="bu">int</span>(<span class="st">&#39;2.7182818284&#39;</span>)
-<span class="bu">int</span>(<span class="st">&quot;1337&quot;</span>)
-<span class="bu">float</span>(<span class="st">&quot;&quot;</span>)
-<span class="bu">type</span>(<span class="bu">float</span>(<span class="bu">int</span>(<span class="bu">str</span>(<span class="bu">int</span>(<span class="bu">float</span>(<span class="bu">str</span>(<span class="bu">int</span>(<span class="fl">13.37</span>))))))))</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> <span class="bu">float</span>(<span class="dv">3</span><span class="op">/</span><span class="dv">9</span>)
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">int</span>(<span class="fl">0.9999999999</span>)
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">int</span>(<span class="op">-</span><span class="fl">1.5</span>)
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">float</span>(<span class="st">&quot;3,141592&quot;</span>)
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">float</span>(<span class="st">&#39;2.7182818284&#39;</span>)
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">int</span>(<span class="st">&#39;2.7182818284&#39;</span>)
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">int</span>(<span class="st">&quot;1337&quot;</span>)
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">float</span>(<span class="st">&quot;&quot;</span>)
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(<span class="bu">float</span>(<span class="bu">int</span>(<span class="bu">str</span>(<span class="bu">int</span>(<span class="bu">float</span>(<span class="bu">str</span>(<span class="bu">int</span>(<span class="fl">13.37</span>))))))))</code></pre></div>
 </section><section id="auflösung-3" class="slide level2">
 <h1>Auflösung</h1>
 <ul>
 <li><code>type(variable)</code> gibt den Typ der Variablen zurück</li>
-<li><code>isinstance(variable, Typ)</code> gibt <code>True</code> zurück, falls die Variable vom Typ <code>Typ</code> ist, ansonsten <code>False</code>.</li>
+<li><code>isinstance(variable, Typ)</code> gibt <code>True</code> zurück, falls die Variable vom Typ <code>Typ</code> ist, ansonsten <code>False</code></li>
+<li>Ergebnisse:</li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> <span class="bu">float</span>(<span class="dv">3</span><span class="op">/</span><span class="dv">9</span>)
-<span class="fl">0.0</span>
+<span class="fl">0.3333333333333333</span>
 <span class="op">&gt;&gt;&gt;</span> <span class="bu">int</span>(<span class="fl">0.9999999999</span>)
 <span class="dv">0</span>
 <span class="op">&gt;&gt;&gt;</span> <span class="bu">int</span>(<span class="op">-</span><span class="fl">1.5</span>)
 <span class="op">-</span><span class="dv">1</span>
 <span class="op">&gt;&gt;&gt;</span> <span class="bu">float</span>(<span class="st">&quot;3,141592&quot;</span>)
 <span class="op">----&gt;</span> <span class="dv">1</span> <span class="bu">float</span>(<span class="st">&quot;3,141592&quot;</span>)
-<span class="pp">ValueError</span>: invalid literal <span class="cf">for</span> <span class="bu">float</span>(): <span class="dv">3</span>,<span class="dv">141592</span>
+<span class="pp">ValueError</span>: could <span class="op">not</span> convert string to <span class="bu">float</span>: <span class="st">&#39;3,141592&#39;</span>
 <span class="op">&gt;&gt;&gt;</span> <span class="bu">float</span>(<span class="st">&#39;2.7182818284&#39;</span>)
 <span class="fl">2.7182818284</span>
 <span class="op">&gt;&gt;&gt;</span> <span class="bu">int</span>(<span class="st">&#39;2.7182818284&#39;</span>)
@@ -248,51 +242,47 @@ erreichen?</li>
 <span class="op">----&gt;</span> <span class="dv">1</span> <span class="bu">float</span>(<span class="st">&quot;&quot;</span>)
 <span class="pp">ValueError</span>: could <span class="op">not</span> convert string to <span class="bu">float</span>: 
 <span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(<span class="bu">float</span>(<span class="bu">int</span>(<span class="bu">str</span>(<span class="bu">int</span>(<span class="bu">float</span>(<span class="bu">str</span>(<span class="bu">int</span>(<span class="fl">13.37</span>))))))))
-<span class="bu">float</span></code></pre></div>
+<span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;float&#39;</span><span class="op">&gt;</span></code></pre></div>
 </section></section>
 <section><section id="eingaben" class="titleslide slide level1"><h1>Eingaben</h1></section><section id="fragen-4" class="slide level2">
 <h1>Fragen</h1>
 <ul>
 <li><p>Was ist der Rückgabetyp von</p>
-<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">raw_input</span>()</code></pre></div></li>
-<li>Wie kann man bei print einen Zeilenumbruch verhindern?</li>
-<li>Wie kann man in einem String einen extra Zeilenumbruch einfügen?</li>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">input</span>()</code></pre></div></li>
 <li><p>Was ist der Typ von folgender Variable?</p>
-<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">muh <span class="op">=</span> <span class="bu">float</span>(<span class="bu">raw_input</span>(<span class="st">&quot;Kuh?&quot;</span>))</code></pre></div></li>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">muh <span class="op">=</span> <span class="bu">float</span>(<span class="bu">input</span>(<span class="st">&quot;Kuh?&quot;</span>))</code></pre></div></li>
 </ul>
 </section><section id="auflösung-4" class="slide level2">
 <h1>Auflösung</h1>
 <ul>
 <li>Der Rückgabetyp ist immer <code>str</code>, also ein String.</li>
-<li>Ein Komma an letzter Stelle, z.B. <code>print &quot;kein Umbruch&quot;,</code> oder <code>print variable,</code></li>
-<li>Mit dem Zeichen <code>\n</code>, z.B. <code>&quot;Hier ist\nEin Zeilenumbruch&quot;</code></li>
 <li><code>float</code></li>
 </ul>
 </section></section>
 <section><section id="verzweigungen" class="titleslide slide level1"><h1>Verzweigungen</h1></section><section id="fragen-5" class="slide level2">
 <h1>Fragen</h1>
 <ul>
-<li>Beschreibe, was genau die <code>if</code>-Anweisung macht</li>
+<li>Beschreibe, was die <code>if</code>-Anweisung bewirkt.</li>
 <li>Wie kann man weitere Ausdrücke neben folgendem testen?</li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="cf">if</span> ausdruck:
-    <span class="bu">print</span> <span class="st">&quot;Blah!&quot;</span></code></pre></div>
+    <span class="bu">print</span>(<span class="st">&quot;Blah!&quot;</span>)</code></pre></div>
 <ul>
 <li>Was ist der Vorteil der Verwendung von <code>elif</code> statt hintereinander geschriebenen <code>if</code>-Verzweigungen?</li>
 <li>Wie kann ich einen Ausdruck negieren?</li>
 <li><p>Bestimme den Wahrheitswert von folgenden Ausdrücken:</p>
-<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="va">False</span> <span class="op">or</span> <span class="dv">1</span> <span class="op">!=</span> <span class="dv">0</span> <span class="op">and</span> <span class="st">&#39;S&#39;</span> <span class="op">==</span> <span class="st">&quot;S&quot;</span>
-<span class="op">not</span> (<span class="dv">5</span> <span class="op">&lt;</span> <span class="dv">0</span>) <span class="op">and</span> <span class="st">&quot;S&quot;</span> <span class="op">&gt;</span> <span class="st">&quot;A&quot;</span>
-<span class="op">not</span> (<span class="op">not</span>(<span class="op">not</span>(<span class="op">not</span>(<span class="va">True</span>))) <span class="op">or</span> <span class="op">not</span> <span class="va">False</span> <span class="op">+</span> <span class="dv">1</span>)</code></pre></div></li>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> <span class="va">False</span> <span class="op">or</span> <span class="dv">1</span> <span class="op">!=</span> <span class="dv">0</span> <span class="op">and</span> <span class="st">&#39;S&#39;</span> <span class="op">==</span> <span class="st">&quot;S&quot;</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="op">not</span> (<span class="dv">5</span> <span class="op">&lt;</span> <span class="dv">0</span>) <span class="op">and</span> <span class="st">&quot;S&quot;</span> <span class="op">&gt;</span> <span class="st">&quot;A&quot;</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="op">not</span> (<span class="op">not</span>(<span class="op">not</span>(<span class="op">not</span>(<span class="va">True</span>))) <span class="op">or</span> <span class="op">not</span> <span class="va">False</span> <span class="op">+</span> <span class="dv">1</span>)</code></pre></div></li>
 </ul>
 </section><section id="bonus" class="slide level2">
 <h1>BONUS</h1>
-<p>Welche Ausdrücke werden hier getestet?</p>
+<p>Nicht immer ist es notwendig, dass alle Ausdrücke überprüft werden. Welche Ausdrücke werden hier getestet?</p>
 <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="cf">if</span> <span class="dv">1</span> <span class="op">==</span> <span class="dv">0</span> <span class="op">and</span> zahl1 <span class="op">==</span> zahl2 <span class="op">and</span> string1 <span class="op">==</span> string2:
-    <span class="bu">print</span> <span class="st">&quot;nope!&quot;</span>
+    <span class="bu">print</span>(<span class="st">&quot;nope!&quot;</span>)
 
 <span class="cf">if</span> <span class="dv">1</span> <span class="op">==</span> <span class="va">None</span> <span class="op">or</span> <span class="dv">1</span> <span class="op">==</span> <span class="dv">0</span> <span class="op">or</span> <span class="bu">isinstance</span>(<span class="dv">1</span>, <span class="bu">int</span>) <span class="op">or</span> zahl1 <span class="op">==</span> zahl2 <span class="op">or</span> string1 <span class="op">==</span> string2:
-    <span class="bu">print</span> <span class="st">&quot;yep!&quot;</span></code></pre></div>
+    <span class="bu">print</span>(<span class="st">&quot;yep!&quot;</span>)</code></pre></div>
 </section><section id="auflösung-5" class="slide level2">
 <h1>Auflösung</h1>
 <ul>
@@ -308,8 +298,8 @@ erreichen?</li>
 <span class="op">&gt;&gt;&gt;</span> <span class="op">not</span> (<span class="op">not</span>(<span class="op">not</span>(<span class="op">not</span>(<span class="va">True</span>))) <span class="op">or</span> <span class="op">not</span> <span class="va">False</span> <span class="op">+</span> <span class="dv">1</span>)
 <span class="va">True</span></code></pre></div></li>
 </ul>
-</section><section class="slide level2">
-
+</section><section id="bonus-auflösung" class="slide level2">
+<h1>Bonus-Auflösung:</h1>
 <ul>
 <li>Es wird nur der erste Ausdruck (<code>1==0</code>) ausgewertet. Da er bereits falsch ist, werden die restlichen Ausdrücke nicht weiter getestet.</li>
 <li>Die ersten drei Ausdrücke werden getestet. Die ersten beiden sind <code>false</code>, deshalb wird jeweils zum nächsten Ausdruck übergegangen. Der Ausdruck <code>isinstance(1, int)</code> ist wahr, weshalb die restlichen Ausdrücke nicht mehr evaluiert werden müssen.</li>
@@ -318,16 +308,16 @@ erreichen?</li>
 <section><section id="schleifen" class="titleslide slide level1"><h1>Schleifen</h1></section><section id="fragen-6" class="slide level2">
 <h1>Fragen</h1>
 <ul>
-<li>Welche Arten von Schleifen kennst du? Was sind Vor- und Nachteile?</li>
+<li>Welche Arten von Schleifen kennst du? Was sind ihre Vor- und Nachteile?</li>
 <li>Welchen Typ hat die variable <code>P=[1,2,3]</code>?</li>
 <li>Wie kannst du vorzeitig aus einer Schleife “aussteigen”?</li>
 <li>Was bewirkt der Befehl <code>continue</code> in einer Schleife?</li>
 <li>Was ist die Ausgabe von folgenden Ausdrücken</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">range</span>(<span class="dv">5</span>)
-<span class="bu">range</span>(<span class="dv">1</span>,<span class="dv">10</span>,<span class="dv">2</span>)
-<span class="bu">range</span>(<span class="dv">10</span>,<span class="dv">1</span>,<span class="op">-</span><span class="dv">2</span>)
-<span class="bu">range</span>(<span class="st">&quot;A&quot;</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">5</span>))
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>,<span class="dv">10</span>,<span class="dv">2</span>))
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">10</span>,<span class="dv">1</span>,<span class="op">-</span><span class="dv">2</span>))
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="st">&quot;A&quot;</span>))</code></pre></div>
 </section><section id="auflösung-6" class="slide level2">
 <h1>Auflösung</h1>
 <ul>
@@ -335,16 +325,95 @@ erreichen?</li>
 <li><code>P</code> ist vom Typ <code>list</code></li>
 <li>Mit dem Befehl <code>break</code></li>
 <li><code>continue</code> lässt alle nachfolgenden Anweisungen im Schleifenblock weg und springt zurück zum Schleifenkopf</li>
+<li>Ausgaben:</li>
 </ul>
-<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> <span class="bu">range</span>(<span class="dv">5</span>)
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">5</span>))
 [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>]
-<span class="op">&gt;&gt;&gt;</span> <span class="bu">range</span>(<span class="dv">1</span>,<span class="dv">10</span>,<span class="dv">2</span>)
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>,<span class="dv">10</span>,<span class="dv">2</span>))
 [<span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">7</span>, <span class="dv">9</span>]
-<span class="op">&gt;&gt;&gt;</span> <span class="bu">range</span>(<span class="dv">10</span>,<span class="dv">1</span>,<span class="op">-</span><span class="dv">2</span>)
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">10</span>,<span class="dv">1</span>,<span class="op">-</span><span class="dv">2</span>))
 [<span class="dv">10</span>, <span class="dv">8</span>, <span class="dv">6</span>, <span class="dv">4</span>, <span class="dv">2</span>]
-<span class="op">&gt;&gt;&gt;</span> <span class="bu">range</span>(<span class="st">&quot;A&quot;</span>)
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="st">&quot;A&quot;</span>))
 <span class="op">----&gt;</span> <span class="dv">1</span> <span class="bu">range</span>(<span class="st">&quot;A&quot;</span>)
-<span class="pp">TypeError</span>: <span class="bu">range</span>() integer end argument expected, got <span class="bu">str</span>.</code></pre></div>
+<span class="pp">TypeError</span>: <span class="st">&#39;str&#39;</span> <span class="bu">object</span> cannot be interpreted <span class="im">as</span> an integer</code></pre></div>
+</section></section>
+<section><section id="listen-und-wörterbücher" class="titleslide slide level1"><h1>Listen und Wörterbücher</h1></section><section id="fragen-7" class="slide level2">
+<h1>Fragen</h1>
+<ul>
+<li>Wie erstellt man eine Liste?</li>
+<li>Wie fügt man ein Element einer bestehenden Liste hinzu?</li>
+<li>Gib noch zwei weitere Möglichkeiten an, wie man eine Liste erweitern kann. Worin liegen die Unterschiede?</li>
+<li>Wie lauten die drei Möglichkeiten Elemente aus einer Liste zu löschen?</li>
+<li>Was ist der Unterschied zwischen einer Liste und einem Wörterbuch?</li>
+</ul>
+</section><section class="slide level2">
+
+<ul>
+<li><p>Was ist die Ausgabe von folgenden Ausdrücken?</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> namen<span class="op">=</span>[<span class="st">&quot;Anton&quot;</span>, <span class="st">&quot;Berta&quot;</span>, <span class="st">&quot;Caersar&quot;</span>, <span class="st">&quot;Dagmar&quot;</span>]
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(namen[<span class="dv">2</span>])
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(namen[<span class="dv">4</span>])
+<span class="op">&gt;&gt;&gt;</span> namen.remove(<span class="dv">1</span>)
+<span class="op">&gt;&gt;&gt;</span> namen.pop()
+<span class="op">&gt;&gt;&gt;</span> <span class="kw">del</span> namen
+<span class="op">&gt;&gt;&gt;</span> namen</code></pre></div></li>
+</ul>
+</section><section id="auflösung-7" class="slide level2">
+<h1>Auflösung</h1>
+<ul>
+<li>zum Beispiel: faecher=[]</li>
+<li>zum Beispiel: faecher.append(“Informatik”)</li>
+<li>faecher.extend() =&gt; kann mehrere Element einer Liste hinzufügen, faecher.insert() =&gt; kann ein Element an einer konkreten Stelle hinzufügen</li>
+<li>faecher.remove(); del faecher[]; faecher.pop()</li>
+<li>u.a.: in Wörterbüchern sind immer zwei Objekte miteinander verknüpft, Listen sind sortiert</li>
+</ul>
+</section><section class="slide level2">
+
+<ul>
+<li><p>Ausgabe:</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> namen<span class="op">=</span>[<span class="st">&quot;Anton&quot;</span>, <span class="st">&quot;Berta&quot;</span>, <span class="st">&quot;Caersar&quot;</span>, <span class="st">&quot;Dagmar&quot;</span>]
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(namen[<span class="dv">2</span>])
+Caesar
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(namen[<span class="dv">4</span>])
+<span class="pp">IndexError</span>: <span class="bu">list</span> index out of <span class="bu">range</span>
+<span class="op">&gt;&gt;&gt;</span> namen.remove(<span class="dv">1</span>)
+<span class="pp">ValueError</span>: <span class="bu">list</span>.remove(x): x <span class="op">not</span> <span class="op">in</span> <span class="bu">list</span>
+<span class="op">&gt;&gt;&gt;</span> namen.pop()
+<span class="co">&#39;Dagmar&#39;</span>
+<span class="op">&gt;&gt;&gt;</span> <span class="kw">del</span> namen
+<span class="op">&gt;&gt;&gt;</span> namen
+<span class="pp">NameError</span>: name <span class="st">&#39;namen&#39;</span> <span class="op">is</span> <span class="op">not</span> defined</code></pre></div></li>
+</ul>
+</section></section>
+<section><section id="funktionen" class="titleslide slide level1"><h1>Funktionen</h1></section><section id="fragen-8" class="slide level2">
+<h1>Fragen</h1>
+<ul>
+<li>Wie kannst du selbst eine Funktion in Python definieren?</li>
+<li>Was versteht man unter einem Argument bei einer Funktion? Wo findet man es und welche Rolle spielt es?</li>
+<li>Was ist der Unterschied zwischen einer lokalen und einer globalen Variable?</li>
+</ul>
+</section><section id="auflösung-8" class="slide level2">
+<h1>Auflösung</h1>
+<ul>
+<li><p>allgemeines Beispiel:</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> Name_der_Funktion (ggf. gewünschte Argumente):
+Eigenschaften der Funktion </code></pre></div></li>
+<li>Argumente sind Informationen, die einer Funktion übergeben werden können; mit diesen Argumenten kann die Funktion arbeiten, zum Beispiel Berechnungen anstellen</li>
+<li><p>Lokale Variablen werden innerhalb einer Funktion definiert und können nur innerhalb dieser verwendet werden. Globale Variablen werden außerhalb einer Funktion definiert und können in allen Programmbereichen verwendet werden.</p></li>
+</ul>
+</section></section>
+<section><section id="module" class="titleslide slide level1"><h1>Module</h1></section><section id="fragen-9" class="slide level2">
+<h1>Fragen</h1>
+<ul>
+<li>Was ist der Unterschied zwischen einem Modul und einer Funktion?</li>
+<li>Nenne mindestestend zwei “vorgefertigte” Module von Python.</li>
+</ul>
+</section><section id="auflösung-9" class="slide level2">
+<h1>Auflösung</h1>
+<ul>
+<li>Eine Funktion kann innerhalb eines Programmcodes definiert werden. Wird sie in einer getrennten Datei gespeichert, wird sie in einem Modul gespeichert und kann in dem Hauptprogramm mit <code>import</code> aufgerufen werden.</li>
+<li><code>time</code> (Zeiteinstellung des Computers), <code>random</code> (Zufallszahlen), <code>math</code> (verschiedene mathematische Funktionen)</li>
+</ul>
 </section></section>
     </div>
   </div>
